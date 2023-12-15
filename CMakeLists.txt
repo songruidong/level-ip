@@ -1,7 +1,7 @@
 if (POLICY CMP0048)
   cmake_policy(SET CMP0048 NEW)
 endif (POLICY CMP0048)
-project(w1p3 VERSION 0.1.0 LANGUAGES C CXX)
+project(mytcp VERSION 0.1.0 LANGUAGES C CXX)
 
 set(CMAKE_BUILD_TYPE Debug)
 set(CMAKE_EXPORT_COMPILECOMMANDS ON) 
@@ -13,4 +13,4 @@ include_directories (${CMAKE_CURRENT_SOURCE_DIR}/include)
 #set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 file(GLOB_RECURSE SRC_LIST ${CMAKE_CURRENT_SOURCE_DIR}/src/*.c)
-add_executable(pm2220 ${SRC_LIST})
+add_executable(mytcp ${SRC_LIST})
